@@ -45,9 +45,9 @@ namespace PayWCF
             catch
             {
                 if (isTesting)
-                    conn = "data source=192.168.1.195\\PSPRO; initial catalog=CredManTest; user id=iva; password=123456; Pooling = true; Connect Timeout=50; Max Pool Size=1000";
+                    conn = "data source=192.168.1.195\\PSPRO; initial catalog=CredManTest; user id=iva; password=xxxxxx; Pooling = true; Connect Timeout=50; Max Pool Size=1000";
                 else
-                    conn = "data source=db2.intelexpress.loc; initial catalog = CredMan; user id = iva; password = 123456; Pooling = true; Connect Timeout = 50; Max Pool Size = 1000";
+                    conn = "data source=db2.intelexpress.loc; initial catalog = CredMan; user id = iva; password = xxxxxx; Pooling = true; Connect Timeout = 50; Max Pool Size = 1000";
             }
             //Properties.Settings t = new Properties.Settings();
           //  WriteLog("CredDb:" + conn);
