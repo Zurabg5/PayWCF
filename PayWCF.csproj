@@ -43,12 +43,9 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AutoUpdater.NET">
-      <HintPath>C:\Users\Zurabgz\source\repos\Cards\packages\Autoupdater.NET.Official.1.5.8\lib\net40\AutoUpdater.NET.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="SMS_Class">
-      <HintPath>..\..\GetOnePswrd\WcfService1\bin\SMS_Class.dll</HintPath>
+      <HintPath>..\..\..\Projects\SMS_Class\SMS_Class\bin\Release\SMS_Class.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.DynamicData" />

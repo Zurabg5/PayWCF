@@ -6,6 +6,9 @@ using System.ServiceModel;
 using System.Data.SqlClient;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using SMS_Class;
+using System.Drawing;
+using System.Diagnostics.Eventing.Reader;
 
 namespace PayWCF
 {
@@ -404,6 +407,7 @@ namespace PayWCF
             }
         }
 
+       
         private int LoanIDFromExternalID(string PrivateID, int ID, out string Client)
         {
             int result = 0;
@@ -603,6 +607,11 @@ left Join Customers C on C.ID = L.CustomerID
             }
             string Text;
             int LoanID = LoanIDFromExternalID(PrivateID, ID, out Text);
+            if (LoanID==0)
+            {
+                return new Result() { Code = -2, Message = $"ვერ მოინახა აქტიური ხელშეკრულება #{ID}" };
+            
+            }
 
            int Period = 1;
             if (PayType != 2)
